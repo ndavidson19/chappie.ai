@@ -280,7 +280,7 @@ class chess:
                         tie_min = tie_min,
                         game_max = game_max,
                         game_num = g_num
-                    ).to('cuda')
+                    )
                     if t == 0:
                         if state == [1, 0, 0]:
                             print(f'WHITE WINS')
