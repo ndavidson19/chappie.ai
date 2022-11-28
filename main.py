@@ -11,6 +11,9 @@ from ai.model import Representation, Backbone
 from tools.toolbox import ToolBox
 from skills.chess.game_interface import chess
 
+os.environ['CUDA_VISIBLE_DEVICES'] ='0'
+
+
 if __name__ == '__main__':
     '''
     game_log = pd.read_csv(f'skills/chess/data/models/test_v7/logs/game_log.csv')
