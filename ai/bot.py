@@ -149,7 +149,7 @@ class Agent:
             g_d = m_param['search']['g_d'],
             single_player = m_param['search']['single_player'],
             max_depth = m_d
-        )
+        ).to(self.Device)
         self.train_control = train
         if self.train_control is True:
             self.noise = True
